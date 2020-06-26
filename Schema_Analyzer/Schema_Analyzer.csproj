@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\Guards\" />
+    <Folder Include="ClientApp\src\app\Pipes\" />
+    <Folder Include="ClientApp\src\app\Services\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Schema_Analyzer.Entities\Schema_Analyzer.Entities.csproj" />
+    <ProjectReference Include="..\Schema_Analyzer.Repositories\Schema_Analyzer.Repositories.csproj" />
+    <ProjectReference Include="..\Schema_Analyzer.Services\Schema_Analyzer.Services.csproj" />
+  </ItemGroup>
+
+</Project>
